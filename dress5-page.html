@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleProducts.css">
+    </head>
+    <body>
+        <header>
+            <nav class = "nav-bar"> 
+                <ul><li><a href="homepage.html">Home</a></li></ul>
+            </nav>    
+        </header>
+
+         <main>
+            <div class="banner">
+                <img src="images/banner.png" alt="Banner">
+            </div>
+
+            <h1>Anna's dress shop</h1>
+
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1">
+                    <img src="images/dress2-moree.jpg" alt="Dress preview">
+                </div>
+
+                <div class="flexbox-item flexbox-item-2">
+                    <h2>Рокля "Златно сияние"</h2>
+                    <h4>Златиста блестяща рокля с колан, минаващ под талията. С тази рокля всички ще ви забележат и ще ви се възхищават.<h4>
+                    <h3>Размер</h3>
+                    <p>Над коляното, без ръкави</p>
+                    <h3>Модел</h3>
+                    <p>Средно дълбоко деколте, по тялото</p>
+                    <h3>Състав</h3>
+                    <p>100% памук</p>
+                    <h3>Описание</h3>
+                    <p>Изчистено златна, едноцветна, с дебели презрамки</p>
+                    <h3>Държава-производител</h3>
+                    <p>България</p>
+                    <h3>Артикулен номер</h3>
+                    <p>785632984</p>
+                    <hr>
+                    <div class="price">$69.99</div>
+                </div>
+            </div>
+
+            <div class="review-container", id="review-container">
+                <h2>Ревюта</h2>
+                <hr>
+                <ul id="reviews">
+                    <li>
+                        <div class="name">
+                            <h3>Ирена Петрова</h3>
+                        </div>
+                        <div class="date">
+                            <strong>09.04.2020</strong>
+                        </div>
+                        <div class="review">
+                            <span>Прекрасен продукт - на живо изглежда точно като на снимката!</span>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="name">
+                            <h3>Малина Филипова</h3>
+                        </div>
+                        <div class="date">
+                            <strong>16.06.2020</strong>
+                        </div>
+                        <div class="review">
+                            <span>Тази рокля се превърна в една от най-красивите, които претежавам. Благодаря ви :)</span>
+                        </div>
+                        <hr>
+                    </li>
+                </ul>
+            </div> 
+
+            <form class="review-form">
+                <h2>Добави ревю</h2>
+                <label for= "name">Име</label>
+                <input type="text" name="review-name", id="review-name"> 
+                <br>
+                <label for= "date">Дата</label>
+                <input type="date" name="review-date", id="review-date"> 
+                <br>
+                <label for= "add-review">Ревю:</label>
+                <br>
+                <textarea id="review" name="review"></textarea>
+                <br>
+                <button type="submit" onclick="addReview">Добави</button>
+            </form>
+
+            <form class="order-form">
+                <h2>Поръчай</h2>
+                <label for= "name">Име</label>
+                <br>
+                <input type="text" name="order-name", id="name-order"> 
+                <br>
+                <label for= "adress">Адрес</label>
+                <br>
+                <input type="text" name="order-adress", id="name-order"> 
+                <br>
+                <button type="submit" onclick = "alert">Поръчай</button> 
+            </form>
+            <script>
+                function alert () 
+                {
+                    var name = document.getElementById('name-order').value;
+                    alert("you pressed a button" + name);
+                }
+
+            </script>
+         </main>
+
+    </body>
+</html>
